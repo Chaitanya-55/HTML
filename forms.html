@@ -2,13 +2,37 @@
 <html>
      <head>
           <title>Forms</title>
+          <style>
+               div {
+                    width: 600px;
+                border: 4px solid green;
+                  padding: 301px;
+                 margin: 37px;
+                    background-color: #FFF4A3;
+               }
+          </style>
      </head>
      <body>
+          <div id="id1">
           <a href="styles.html">Edupoly</a>
-         <form action="http://chaitu.com">
-          <input type="text" name="username">
+         <form action="https://naistam.com"> 
+          <img src="Screenshot 2024-02-15 131806.png" alt="" style="width: 500px;height: 500px;">
+          <img src="get method.png" alt="" style="width: 500px;height: 500px;">
+          
+          <h1> 1. method lo post request ga pampiste inspect lo console
+                pakkana network tap lo > paylod lo > form data laga 
+                veltadi </h1>
+               <h1> 2. method lo get request ga pampiste inspect lo console
+                pakkana network tap lo > paylod lo > query string parameter laga 
+                veltadi.</h1>
+               <h1>  3.By default form tag will have get request and send data
+                 to back end in query string parameter</h1>
+
+          <label for="abcd">Username</label>
+          <input type="text" id="abcd" name="username" placeholder="username" required minlength="3" maxlength="8">
           <br>
-          <input type="password" name="password" id="">
+          <label for="bcde">Password</label>
+          <input type="password"  id="bcde" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" name="password" placeholder="password">
           <br>
           <input type="date" name="date">
           <br>
@@ -22,13 +46,27 @@
           female<input type="radio" name="gender" value="female" id=""> 
           other<input type="radio" name="gender" value="other" id="">
           <br>
-          <input type="checkbox" name="checkbox" id="">
+          <input type="email" placeholder="email" value="">
           <br>
+          <input type="checkbox" name="checkbox" value="HTML">HTML
           
+          <input type="checkbox" name="checkbox" value="CSS">CSS
+          
+          <input type="checkbox" name="checkbox" value="JS">Javascript
+          <br>
+          <select name="" id="">
+               <option required></option>
+               <option>India</option>
+               <option>Pakistan</option>
+               <option>Srilanka</option>
+          </select>
+          <br>
           <input type="email" name="email" id="">
           <br>
-          <button type="submit">Submit</button>
+          <button type="button">Submit</button>
+          <input type="submit" name="" value="button">
          </form>
+     </div>
 
      </body>
 </html>
